@@ -1,0 +1,38 @@
+$ranglar: (
+  primary: blue,
+  secondary: grey,
+  info: aqua,
+  danger: red,
+  warning: yellow,
+  success: green,
+  dark: black,
+  light: white,
+  indigo: indigo,
+  orange: orange,
+); // map
+
+@each $kalit-soz, $qiymat in $ranglar {
+  .text-#{$kalit-soz} {
+    color: #{$qiymat};
+  }
+}
+@each $kalit-soz, $qiymat in $ranglar {
+  .bg-#{$kalit-soz} {
+    background-color: #{$qiymat};
+  }
+}
+@each $kalit-soz, $qiymat in $ranglar {
+  .border-#{$kalit-soz} {
+    border: 1px solid #{$qiymat};
+  }
+}
+@each $kalit-soz, $qiymat in $ranglar {
+  .shadow-#{$kalit-soz} {
+    box-shadow: 10px 10px 10px #{$qiymat};
+  }
+}
+@each $kalit-soz, $qiymat in $ranglar {
+  .text-shadow-#{$kalit-soz} {
+    text-shadow: 5px 5px 2px #{$qiymat};
+  }
+}

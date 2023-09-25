@@ -1,0 +1,10 @@
+@import "functions";
+@import "loops";
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: aqua;
+
+  box-shadow: standardShadow(red);
+}

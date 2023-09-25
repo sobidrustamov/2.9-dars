@@ -1,0 +1,4 @@
+@function standardShadow($qiymat) {
+  @return 10px 10px 0 $qiymat, 20px 20px 5px lighten($qiymat, 20),
+    30px 30px 10px lighten($qiymat, 40);
+}
